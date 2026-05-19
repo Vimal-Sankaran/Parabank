@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07cc1b77-f5f2-4024-84d0-4eb210caaea2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parabank/pages/AccountDetailsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parabank/pages/AccountOverviewPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parabank/pages/AccountServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parabank/stepdefinitions/AccountDetailsPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/parabank/stepdefinitions/AccountServicesSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/parabank/helpers/EntityHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parabank/helpers/EntityHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/parabank/stepdefinitions/RegisterPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/parabank/stepdefinitions/RegisterPageSteps.java" afterDir="false" />

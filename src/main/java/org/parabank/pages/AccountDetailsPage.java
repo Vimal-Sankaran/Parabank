@@ -43,22 +43,18 @@ public class AccountDetailsPage extends BaseClass {
      * Getters
      */
     public String getAccountNumber() {
-
         return getElementText(accountNumber);
     }
 
     public String getAccountType() {
-
         return getElementText(accountType);
     }
 
     public String getBalance() {
-
         return getElementText(balance);
     }
 
     public String getAvailableBalance() {
-
         return getElementText(availableBalance);
     }
 }
