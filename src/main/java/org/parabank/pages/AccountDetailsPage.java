@@ -1,10 +1,10 @@
 package org.parabank.pages;
 
+import org.parabank.utilities.BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.parabank.utilities.BaseClass;
 
 public class AccountDetailsPage extends BaseClass {
 
@@ -19,13 +19,13 @@ public class AccountDetailsPage extends BaseClass {
      * Account Number
      */
     @FindBy(id = "accountId")
-    private WebElement accountNo;
+    private WebElement accountNumber;
 
     /*
      * Account Type
      */
     @FindBy(id = "accountType")
-    private WebElement acctType;
+    private WebElement accountType;
 
     /*
      * Balance
@@ -43,11 +43,11 @@ public class AccountDetailsPage extends BaseClass {
      * Getters
      */
     public String getAccountNumber() {
-        return getElementText(accountNo);
+        return getElementText(accountNumber);
     }
 
     public String getAccountType() {
-        return getElementText(acctType);
+        return getElementText(accountType);
     }
 
     public String getBalance() {
