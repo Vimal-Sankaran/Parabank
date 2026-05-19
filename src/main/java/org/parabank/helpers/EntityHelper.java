@@ -2,15 +2,15 @@ package org.parabank.helpers;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.parabank.utilities.ConfigReader;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 public class EntityHelper {
-    private static final String jsonPath =
-            "C:\\Users\\psvim\\IdeaProjects\\ParaBank\\src\\test\\resources\\data\\Parabank.json";
 
+    public static ConfigReader config = new ConfigReader();
     /*
      * READ JSON
      */
@@ -23,7 +23,7 @@ public class EntityHelper {
         try {
 
             dataList = obj.readValue(
-                    new File(jsonPath),
+                    new File(config.getProperty("jsonPath")),
                     new TypeReference<List<ParabankData>>() {}
             );
 
@@ -44,7 +44,7 @@ public class EntityHelper {
         try {
 
             obj.writerWithDefaultPrettyPrinter()
-                    .writeValue(new File(jsonPath), dataList);
+                    .writeValue(new File(config.getProperty("jsonPath")), dataList);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

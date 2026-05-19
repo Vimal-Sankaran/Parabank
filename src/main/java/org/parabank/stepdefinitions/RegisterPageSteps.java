@@ -1,6 +1,8 @@
 package org.parabank.stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.parabank.helpers.*;
 import org.parabank.pages.RegisterPage;
 
@@ -89,33 +91,19 @@ public class RegisterPageSteps extends BaseClass {
                 entityHelper.getDataById(id);
 
         // 1. Fill registration form
-        registerPage.enterFirstName(
-                data.getCustomer().getFirstName()
-        );
+        registerPage.enterFirstName(data.getCustomer().getFirstName());
 
-        registerPage.enterLastName(
-                data.getCustomer().getLastName()
-        );
+        registerPage.enterLastName(data.getCustomer().getLastName());
 
-        registerPage.enterAddress(
-                data.getCustomer().getAddress()
-        );
+        registerPage.enterAddress(data.getCustomer().getAddress());
 
-        registerPage.enterCity(
-                data.getCustomer().getCity()
-        );
+        registerPage.enterCity(data.getCustomer().getCity());
 
-        registerPage.enterState(
-                data.getCustomer().getState()
-        );
+        registerPage.enterState(data.getCustomer().getState());
 
-        registerPage.enterZip(
-                data.getCustomer().getZipCode()
-        );
+        registerPage.enterZip(data.getCustomer().getZipCode());
 
-        registerPage.enterPhone(
-                data.getCustomer().getPhoneNumber()
-        );
+        registerPage.enterPhone(data.getCustomer().getPhoneNumber());
 
         registerPage.enterSSN(
                 data.getCustomer().getSsn()
