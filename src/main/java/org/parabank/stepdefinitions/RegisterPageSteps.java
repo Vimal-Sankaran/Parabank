@@ -101,13 +101,9 @@ public class RegisterPageSteps extends BaseClass {
 
         registerPage.enterState(data.getCustomer().getState());
 
-        registerPage.enterZip(
-                data.getCustomer().getZipCode()
-        );
+        registerPage.enterZip(data.getCustomer().getZipCode());
 
-        registerPage.enterPhone(
-                data.getCustomer().getPhoneNumber()
-        );
+        registerPage.enterPhone(data.getCustomer().getPhoneNumber());
 
         registerPage.enterSSN(
                 data.getCustomer().getSsn()
